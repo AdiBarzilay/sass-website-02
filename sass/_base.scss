@@ -35,11 +35,14 @@ Grey dark 3: #999
     --line: 1px solid var(--color-grey-light-2);
 }
 
-$bp-largest: 75em;     // 1200px
-$bp-large: 68.75em;    // 1100px
+// brake points for
+$bp-largest: 75em; 
+$bp-large: 75em;    // 1200px 1200/16 = 75
 $bp-medium: 56.25em;   // 900px
 $bp-small: 37.5em;     // 600px
 $bp-smallest: 31.25em; // 500px
+// $bp-smallest-: 25em; // 400px
+$bp-smallest--: 22.5em; // 340px
 
 * {
     margin: 0;
@@ -56,8 +59,12 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
 
-    @media only screen and (max-width: $bp-large) {
-        font-size: 50%;
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 55%;
     }
 
 }

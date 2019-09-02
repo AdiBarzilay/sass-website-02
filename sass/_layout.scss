@@ -68,8 +68,12 @@
     @media only screen and (max-width: $bp-small) {
         flex-direction: column;
     }
-}
 
+    @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
 
 .description {
     background-color: #fff;
@@ -85,7 +89,12 @@
     
     @media only screen and (max-width: $bp-small) {
         margin-right: 0;
-        margin-bottom: 3rem;
+       
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        
+        margin-bottom: 2rem;
     }
     
 }
